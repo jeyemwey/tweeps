@@ -1,0 +1,5 @@
+{
+	"require": {
+		"philwc/jsondb": "dev-master"
+	}
+}
