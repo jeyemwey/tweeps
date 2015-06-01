@@ -2,8 +2,7 @@
 
 include "vendor/autoload.php";
 
+//Initialize Libraries
 $db = new \philwc\JsonDB("data/");
 
-header("Content-Type: text/json");
-
-echo json_encode($db->selectAll("tweeps"));
+$tweeps = $db->selectAll("tweeps");
