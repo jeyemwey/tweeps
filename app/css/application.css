@@ -1,10 +1,25 @@
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-weight: light;
   font-size: 18px;
-  width: 620px;
+  width: 655px;
   max-width: 100%;
   margin: 50px auto; }
+
+header {
+  padding-bottom: 2em;
+  border-bottom: 1px solid grey;
+  margin-bottom: 3em; }
+  header h1 {
+    margin: 0px;
+    font-size: 4em;
+    display: inline; }
+  header aside {
+    padding-left: 0.5em !important; }
+
+aside, span {
+  display: inline;
+  padding: 1em 0px 0px;
+  font-family: "Consolas", "Courier New", monospace; }
 
 ul {
   padding-left: 0px;
@@ -12,13 +27,42 @@ ul {
   ul li {
     display: inline-block;
     max-width: 50%;
-    margin-right: 1em;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin-right: 2em; }
+    ul li:nth-child(5n) {
+      margin-right: 0px; }
+    ul li div.overlay {
+      position: absolute;
+      width: 98px;
+      height: 98px;
+      line-height: 98px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 1.8em;
+      opacity: 0;
+      transition: opacity .2s ease-in-out; }
+      ul li div.overlay a {
+        color: white; }
+      ul li div.overlay:hover {
+        opacity: 1; }
     ul li img {
-      display: block; }
+      display: block;
+      width: 98px;
+      height: 98px; }
     ul li span {
       display: block;
       text-align: center;
-      padding: 0.3em 0px; }
+      padding-bottom: 1em; }
+
+footer {
+  padding-top: 2em;
+  border-top: 1px solid grey;
+  margin-top: 3em; }
+  footer aside {
+    display: block;
+    text-align: right; }
+    footer aside a {
+      text-decoration: none;
+      color: #0f55d5; }
 
 /*# sourceMappingURL=application.css.map */

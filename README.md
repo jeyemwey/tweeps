@@ -29,3 +29,4 @@ In order to grab data from Twitter (eg avatar pictures), Twitter requires you to
 ## Used Libraries
 
 * Straussn's JSON-Databaseclass
+* Font-Awesome

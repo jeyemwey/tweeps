@@ -8,4 +8,3 @@ vendor/
 
 ## data-folder
 data/*
-!data/Codebird.WakeUp.php
