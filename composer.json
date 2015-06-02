@@ -1,5 +1,5 @@
 {
 	"require": {
-		"philwc/jsondb": "dev-master"
+		"jublonet/codebird-php": "2.7.0"
 	}
 }

@@ -1,17 +1,24 @@
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: light;
-  font-size: 18px; }
+  font-size: 18px;
+  width: 620px;
+  max-width: 100%;
+  margin: 50px auto; }
 
 ul {
-  padding-left: none;
+  padding-left: 0px;
   list-style-type: none; }
   ul li {
     display: inline-block;
-    width: 256px;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 0px 1em 1em;
-    border: 1px solid #eee; }
+    max-width: 50%;
+    margin-right: 1em;
+    box-sizing: border-box; }
+    ul li img {
+      display: block; }
+    ul li span {
+      display: block;
+      text-align: center;
+      padding: 0.3em 0px; }
 
 /*# sourceMappingURL=application.css.map */

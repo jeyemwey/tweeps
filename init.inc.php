@@ -1,8 +1,10 @@
 <?php
 
 include "vendor/autoload.php";
+include "app/classes/JSONDB.php";
+
 
 //Initialize Libraries
-$db = new \philwc\JsonDB("data/");
+$db = new JsonDB("data/");
 
 $tweeps = $db->selectAll("tweeps");

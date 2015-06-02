@@ -15,7 +15,11 @@ include "init.inc.php";
 		<?php if (count($tweeps)): ?>
 			<ul>
 			<?php foreach ($tweeps as $tweep): ?>
-				<li><?= $tweep["name"]["real"] ?></li>
+				<li>
+					<div class="overlay">T</div>
+					<img src="<?= $tweep["twitter_image"] ?>" alt="<?= $tweep["name_twitter"] ?>" />
+					<span id="name"><?= $tweep["name_real"] ?></span>
+				</li>
 			<?php endforeach; ?>
 			</ul>
 		<?php endif; ?>
