@@ -11,22 +11,11 @@ In order to grab data from Twitter (eg avatar pictures), Twitter requires you to
 1. Create an app (name it whatever you want).
 2. Change the __Access Level__ to "Read and write".
 3. Create yourself an Access Token in the "*Keys and Access Tokens*"-tab. You will find that button on the bottom of the page.
-4. Then open `data/Codebird.WakeUp.php` and change the following code:
-
-```
-"twitter" => [
-	"app" => [
-		"key" => "YOUR_APP_KEY",
-		"secret" => "YOUR_APP_SECRET"
-	],
-	"user" => [
-		"token" => "YOUR_USER_TOKEN",
-		"secret" => "YOUR_USER_SECRET"
-	]
-]
-```
+4. Then open `data/Codebird.WakeUp.php` and change the matching strings (You'll see what I mean).
+5. Open `data/tweeps.json` and add your fellow real-life-tweeps!
 
 ## Used Libraries
 
 * Straussn's JSON-Databaseclass
+* Codebird/PHP
 * Font-Awesome
