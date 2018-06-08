@@ -5,8 +5,9 @@ body {
 	width: 655px;
 	max-width: 100%;
 	margin: 50px auto;
-
+	background: #f9f9f1;
 }
+
 header {
 	padding-bottom: 2em;
 	border-bottom: 1px solid grey;
@@ -70,6 +71,7 @@ ul {
 			display: block;
 			width: 98px;
 			height: 98px;
+			border-radius: 2px;
 		}
 		
 		span {
