@@ -9,13 +9,13 @@ $sql = (string) "";
 
 //Loop through Tweeps
 foreach ($tweeps as $tweep) {
-	$Avatar = (string) $cb->users_show("screen_name=" . $tweep['name_twitter'])->profile_image_url;
+	$res = $cb->users_show("screen_name=" . $tweep['name_twitter']);
+	$Avatar = (string) $res->profile_image_url;
 	$Avatar = str_replace("normal", "bigger", $Avatar);
 	
 	$tweep['twitter_image'] = $Avatar;
 
-	print_r($tweep);
-
 	//update!
 	$db->update("tweeps", "name_twitter", $tweep["name_twitter"], $tweep);
+	echo "Updated: " . $tweep["name_twitter"] . PHP_EOL;
 }
